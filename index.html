@@ -19,23 +19,24 @@
         <div class="container">
             <div class="row" style="height:189px;">
                 <div class="col-md-6" style="height:177px;background-color:#8fffd0;padding:28px;margin:0px;">
-                    <h1 style="color:rgb(252,250,250);font-size:75px;">0 </h1></div>
-                <div class="col-md-6" style="height:170;background-color:#9bebfc;padding:28px;">
-                    <h1 style="height:24px;font-family:ABeeZee, sans-serif;color:rgb(237,232,232);font-size:43px;">Wins: </h1>
-                    <h1 style="font-family:ABeeZee, sans-serif;color:rgb(252,243,243);font-size:43px;">Loses: </h1></div>
+                    <h1 class="ranNumBox" style="color:rgb(252,250,250);font-size:75px;"></h1></div>
+                <div id="winLoseBox" class="col-md-6" style="height:170;background-color:#9bebfc;padding:28px;">
+                    <h1 id="win" style="height:24px;font-family:ABeeZee, sans-serif;color:rgb(237,232,232);font-size:43px;">Wins: </h1>
+                    <h1 id="loss" style="font-family:ABeeZee, sans-serif;color:rgb(252,243,243);font-size:43px;">Loses: </h1></div>
+            </div>
+            
             </div>
         </div>
     </div>
     <div>
-        <div class="container-fluid" style="height:246px;">
+        <div class="container-fluid" id="parentGameButtons" style="height:246px;">
             <div class="row" style="margin:49px;">
-                <div class="col-md-3" style="height:155px;"><img style="background-image:url(&quot;assets/img/green gem.png&quot;);"></div>
-                <div class="col-md-3" style="height:155px;"><img style="background-image:url(&quot;assets/img/red gem.png&quot;);"></div>
-                <div class="col-md-3" style="height:155px;"><img style="background-image:url(&quot;assets/img/purple gem.png&quot;);"></div>
-                <div class="col-md-3" style="height:155px;"><img style="background-image:url(&quot;assets/img/pink gem.jpg&quot;);"></div>
+                <div type="button" class="col-md-3" id="crystal1" value="1" style="height:155px;"><img src="assets/img/green gem.png" style="width:80px;height:80;"></div>
+                <div type="button" class="col-md-3" id="crystal2" value="2" style="height:155px;"><img src="assets/img/red gem.png" style="background-image:url(&quot;assets/img/red gem.png&quot;);width:80px;height:80;"></div>
+                <div type="button" class="col-md-3" id="crystal3" value="3" style="height:155px;"><img src="assets/img/purple gem.png" style="background-image:url(&quot;assets/img/purple gem.png&quot;);width:80px;"></div>
+                <div type="button" class="col-md-3" id="crystal4" value="4" style="height:155px;"><img src="assets/img/pink gem.jpg" style="background-image:url(&quot;assets/img/pink gem.jpg&quot;);width:80px;"></div>
             </div>
         </div>
-    </div>
     <div>
         <div class="container">
             <div class="row">
@@ -47,13 +48,16 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="height:107px;background-color:#50eae0;">
-                    <h1 style="font-size:71px;color:rgb(244,239,239);">0 </h1></div>
+                <div class="col-md-12" id="parentScore" style="height:107px;background-color:#50eae0;">
+                    <h1 id="scoreDisplay" style="font-size:71px;color:rgb(244,239,239);"></h1></div>
             </div>
+          
+    </div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
 </body>
 
 </html>
